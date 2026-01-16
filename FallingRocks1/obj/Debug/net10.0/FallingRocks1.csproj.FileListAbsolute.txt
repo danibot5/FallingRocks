@@ -1,0 +1,14 @@
+C:\Users\Dani 5\source\repos\FallingRocks1\FallingRocks1\bin\Debug\net10.0\FallingRocks1.exe
+C:\Users\Dani 5\source\repos\FallingRocks1\FallingRocks1\bin\Debug\net10.0\FallingRocks1.deps.json
+C:\Users\Dani 5\source\repos\FallingRocks1\FallingRocks1\bin\Debug\net10.0\FallingRocks1.runtimeconfig.json
+C:\Users\Dani 5\source\repos\FallingRocks1\FallingRocks1\bin\Debug\net10.0\FallingRocks1.dll
+C:\Users\Dani 5\source\repos\FallingRocks1\FallingRocks1\bin\Debug\net10.0\FallingRocks1.pdb
+C:\Users\Dani 5\source\repos\FallingRocks1\FallingRocks1\obj\Debug\net10.0\FallingRocks1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dani 5\source\repos\FallingRocks1\FallingRocks1\obj\Debug\net10.0\FallingRocks1.AssemblyInfoInputs.cache
+C:\Users\Dani 5\source\repos\FallingRocks1\FallingRocks1\obj\Debug\net10.0\FallingRocks1.AssemblyInfo.cs
+C:\Users\Dani 5\source\repos\FallingRocks1\FallingRocks1\obj\Debug\net10.0\FallingRocks1.csproj.CoreCompileInputs.cache
+C:\Users\Dani 5\source\repos\FallingRocks1\FallingRocks1\obj\Debug\net10.0\FallingRocks1.dll
+C:\Users\Dani 5\source\repos\FallingRocks1\FallingRocks1\obj\Debug\net10.0\refint\FallingRocks1.dll
+C:\Users\Dani 5\source\repos\FallingRocks1\FallingRocks1\obj\Debug\net10.0\FallingRocks1.pdb
+C:\Users\Dani 5\source\repos\FallingRocks1\FallingRocks1\obj\Debug\net10.0\FallingRocks1.genruntimeconfig.cache
+C:\Users\Dani 5\source\repos\FallingRocks1\FallingRocks1\obj\Debug\net10.0\ref\FallingRocks1.dll
