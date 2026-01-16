@@ -1,21 +1,26 @@
-﻿int windowWidth = 60;
+double score = 0;
+int speed = 100;
+int windowWidth = 60;
 int windowHeight = 20;
+
 Console.BufferWidth = Console.WindowWidth = windowWidth;
 Console.BufferHeight = Console.WindowHeight = windowHeight;
 Console.CursorVisible = false;
+Console.BackgroundColor = ConsoleColor.DarkBlue;
+Console.Clear();
 
 int dwarfX = windowWidth / 2;
 int dwarfY = windowHeight - 1;
 string dwarf = "(0)";
-Random randomGenerator = new Random();
 
+Random randomGenerator = new Random();
 List<int> rocksX = new List<int>();
 List<int> rocksY = new List<int>();
 List<char> rocksChar = new List<char>();
 List<ConsoleColor> rocksColor = new List<ConsoleColor>();
 
 char[] availableRocks = { '^', '@', '*', '&', '+', '%', '$', '#', '!', '.', ';' };
-ConsoleColor[] availableColors = { ConsoleColor.Cyan, ConsoleColor.Green, ConsoleColor.Magenta, ConsoleColor.Yellow, ConsoleColor.Red };
+ConsoleColor[] availableColors = { ConsoleColor.Cyan, ConsoleColor.Green, ConsoleColor.Magenta, ConsoleColor.Yellow, ConsoleColor.Red, ConsoleColor.White };
 
 while (true)
 {
@@ -52,8 +57,13 @@ while (true)
         if (currentY == dwarfY && (currentX >= dwarfX && currentX <= dwarfX + 2))
         {
             Console.Clear();
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.BackgroundColor = ConsoleColor.DarkRed;
+            Console.Clear();
+            Console.SetCursorPosition(windowWidth / 2 - 5, windowHeight / 2);
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("GAME OVER!");
+            Console.SetCursorPosition(windowWidth / 2 - 6, windowHeight / 2 + 1);
+            Console.WriteLine($"Your Score: {score}");
             return;
         }
 
@@ -84,5 +94,13 @@ while (true)
         Console.Write(rocksChar[i]);
     }
 
-    System.Threading.Thread.Sleep(150);
+    Console.SetCursorPosition(0, 0);
+    Console.ForegroundColor = ConsoleColor.White;
+    Console.Write($"Score: {score}");
+
+    score += 1;
+    if (score % 100 == 0)
+        if (speed > 10) speed -= 2;
+
+    System.Threading.Thread.Sleep(speed);
 }
